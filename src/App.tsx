@@ -1,8 +1,16 @@
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import IndexPage from "./pages/IndexPage";
+import DetailPage from "./pages/DetailPage";
+
 function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" Component={IndexPage} />
+        <Route path="/:id" Component={DetailPage} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
