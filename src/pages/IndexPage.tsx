@@ -48,7 +48,7 @@ const IndexPage: React.FC = () => {
       </Description>
       <PoketmonList />
       <ImageWrapper>
-        <Image src="/assets/poketball.svg" />
+        <Image src="/assets/pocketball.svg" />
       </ImageWrapper>
     </Base>
   );
